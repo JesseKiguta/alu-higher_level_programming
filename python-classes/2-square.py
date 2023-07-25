@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 ''' defines the size of the square '''
 
+
 class Square:
     ''' class defines the size of the square with parameters '''
     def __init__(self, size=0):
