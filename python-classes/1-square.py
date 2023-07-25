@@ -3,6 +3,7 @@
 
 
 class Square:
+    ''' Initializes class attributes '''
     def __init__(self, size):
-        ''' initialize class attributes then uses a private instance attribute '''
+        ''' Uses a private instance attribute '''
         self.__size = size
