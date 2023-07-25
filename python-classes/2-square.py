@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' Specifies the size of the square '''
+""" Specifies the size of the square """
 
 
 class Square:
