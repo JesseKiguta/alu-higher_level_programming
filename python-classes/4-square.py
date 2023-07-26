@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' Applying getters and setters in the square function '''
+""" Applying getters and setters in the square function """
 
 
 class Square:
@@ -18,14 +18,12 @@ class Square:
     
     @property
     def size(self):
-        """ retrieves the __size attribute because
-        it is private """
+        """ gets __size """
         return self.__size
 
     @size.setter
     def size(self, value):
-        """ sets the retrieved attribute in
-        a similar way to init """
+        """ sets __size """
         if type(value) is not int:
             raise TypeError("size must be an integer")
         if value < 0:
