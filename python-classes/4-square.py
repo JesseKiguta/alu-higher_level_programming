@@ -17,15 +17,15 @@ class Square:
             self.__size = size
     
     @property
-    """ retrieves the __size attribute because
-    it is private """
     def size(self):
+        """ retrieves the __size attribute because
+    it is private """
         return self.__size
 
     @size.setter
-    """ sets the retrieved attribute in
-    a similar way to init """
     def size(self, value):
+        """ sets the retrieved attribute in
+    a similar way to init """
         if type(value) is not int:
             raise TypeError("size must be an integer")
         if value < 0:
