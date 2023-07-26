@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 ''' Prints a square '''
+
+
 class Square:
     """ class defines the size of the square
     the square's size has to be a positive integer """
