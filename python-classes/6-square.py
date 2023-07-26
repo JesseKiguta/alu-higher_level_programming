@@ -7,7 +7,7 @@ class Square:
     the square's size has to be a positive integer and
     the position of the square using coordinates, setters and
     getters"""
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """ initializes the size and
         position """
         self.size = size
