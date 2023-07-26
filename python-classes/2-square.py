@@ -1,19 +1,17 @@
 #!/usr/bin/python3
-""" Specifies the size of the square """
+''' Specifies the size of the square '''
 
 
 class Square:
-    ''' class defines the size of the square with parameters '''
+    """ class defines the size of the square
+    the square's size has to be a positive integer """
     def __init__(self, size=0):
-        ''' initializes attributes '''
+        """ initializes attributes then
+        uses if statements to raise errors when
+        the size is not a positive integer """
         if type(size) is not int:
-            ''' ensures size is an integer '''
             raise TypeError("size must be an integer")
-        ''' returns an error message if not an integer '''
         if size <= 0:
-            ''' ensures size is positive '''
             raise ValueError("size must be >= 0")
-        ''' returns an error if negative '''
         else:
-            ''' changes default size to new size '''
             self.__size = size
