@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 ''' how many instances '''
+
+
 class Rectangle:
     ''' defines the height and width of a rectangle '''
     number_of_instances = 0
     def __init__(self, width=0, height=0):
-        ''' initializes attrbutes '''
+        ''' initializes attributes '''
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
