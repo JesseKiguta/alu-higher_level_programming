@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 ''' inheritance with lists '''
 
+
 class MyList(list):
     ''' MyList inherits from mylist '''
     def print_sorted(self):
