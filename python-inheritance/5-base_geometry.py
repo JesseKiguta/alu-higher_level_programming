@@ -2,7 +2,7 @@
 ''' geometry module '''
 
 
-def BaseGeometry:
+class BaseGeometry:
     '''An empty class
     '''
     pass
