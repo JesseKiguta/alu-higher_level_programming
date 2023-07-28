@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 ''' improve geometry '''
 
+
 class BaseGeometry:
     '''Base Geometry class
     '''
