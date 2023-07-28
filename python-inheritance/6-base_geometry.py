@@ -2,7 +2,9 @@
 ''' improve geometry '''
 
 def BaseGeometry:
-    '''base geometry'''
+    '''Base Geometry class
+    '''
     def area(self):
-        '''calculates area'''
+        '''Calculates area
+        '''
         raise Exception("area() is not implemented")

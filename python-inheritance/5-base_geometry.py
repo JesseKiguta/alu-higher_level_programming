@@ -3,5 +3,6 @@
 
 
 def BaseGeometry:
-    '''empty'''
+    '''An empty class
+    '''
     pass
