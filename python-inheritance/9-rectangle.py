@@ -7,7 +7,7 @@ class Rectangle(BaseGeometry):
     ''' New Rectangle class inherits from BaseGeometry, and represents a
     rectangle '''
     def __init__(self, width, height):
-        ''' Initializes attributes 
+        ''' Initializes attributes
         '''
         super().integer_validator("width", width)
         super().integer_validator("height", height)
@@ -15,11 +15,11 @@ class Rectangle(BaseGeometry):
         self.__height = height
 
     def area(self):
-        ''' Calculates area 
+        ''' Calculates area
         '''
         return self.__width * self.__height
 
     def __str__(self):
-        ''' Returns info about the rectangle 
+        ''' Returns info about the rectangle
         '''
         return f"[Rectangle] {self.__width}/{self.__height}"
