@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' Divide a matrix '''
+''' Dividing all the elements in a matrix '''
 
 
 def matrix_divided(matrix, div):
