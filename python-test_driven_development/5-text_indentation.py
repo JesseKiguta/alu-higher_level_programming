@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-''' 
-Defining a text indentation function that prints indented text
-'''
+''' Defining a text indentation function that prints indented text '''
 
 
 def text_indentation(text):
