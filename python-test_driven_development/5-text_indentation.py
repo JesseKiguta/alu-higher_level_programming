@@ -1,42 +1,29 @@
 #!/usr/bin/python3
 ''' 
-Text indentation 
+Defining a text indentation function that prints indented text
 '''
 
 
 def text_indentation(text):
     '''
     Prints a text with 2 new lines after . ? and :
+    Ensures text is a string
+    Raises an error if text is not a string
     '''
     if type(text) is not str:
         raise TypeError("text must be a string")
-
-    new = ""
-    substring = ""
-    temp = [] * 2
-    flag = 0
-
-    if type(text) is not str:
-        raise TypeError("text must be a string")
-
-    for i in range(len(text)):
-        if i < len(text) and text[i] == '.' or text[i] == '?'
-           or text[i] == ':':
-            if flag == 0:
-                temp = text.split(text[i], 1)
-                flag = 1
-            else:
-                temp = substring.split(text[i], 1)
-            new += temp[0].lstrip(' ') + text[i]
-            substring = temp[1]
-            print("{:s}".format(new))
-            print()
-            new = ""
-    if flag == 0:
-        text = text.lstrip(' ')
-        text = text.rstrip(' ')
-        print("{:s}".format(text), end="")
-    else:
-        substring = substring.lstrip(' ')
-        substring = substring.rstrip(' ')
-        print("{:s}".format(substring), end="")
+    for i in range(0, len(text)):
+        if text[i] in [".", "?", ":"]:
+            print(text[i], end="")
+            print("\n")
+        elif text[i] == " ":
+            for x in range(i, 0, -1):
+                if text[x] == " ":
+                    continue
+                elif text[x] in [".", "?", ":"]:
+                    break
+                else:
+                    print(text[i], end="")
+                    break
+        else:
+            print(text[i], end="")
