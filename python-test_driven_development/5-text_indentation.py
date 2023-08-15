@@ -1,9 +1,13 @@
 #!/usr/bin/python3
-''' Text indentation '''
+''' 
+Text indentation 
+'''
 
 
 def text_indentation(text):
-    '''Prints a text with 2 new lines after . ? and :'''
+    '''
+    Prints a text with 2 new lines after . ? and :
+    '''
     if type(text) is not str:
         raise TypeError("text must be a string")
 
